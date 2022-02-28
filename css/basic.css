@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nanum+Gothic&display=swap');
+
+.blind { font-size:0; overflow:none; }
+
+body { font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif; }
+
+header { position:fixed; top:0; left:0; width:100%;height:80px; background:#000; z-index:10 }
+header #header_in { min-width:1080px; margin:auto; padding:0 100px}
+header h1 { float:left; margin-top:22px; }
+header h1 a { display:block; width:120px; height:30px; background:url("../img/logo_white.png") no-repeat; background-size:100% auto; }
+
+header ul { float:right; margin-top:30px;}
+header li { display:inline-block; margin-left:50px;  }
+header a { color:#fff; font-size:14px; font-family:'Montserrat', sans-serif; font-weight:700;}
+
+
+.navlast:after { display:inline-block; content:""; width:1px; height: 10px; background:#fff; margin:0 20px 0 40px; }
+.navLang { margin-left:15px;}
+
+header li.on a, header li a:hover { color:#FA2828; } 
+
+main {}
+section { position:relative; background-size:cover; background-position:center center;}
+
+#section1 { background-image:url('../img/bg_m1.jpg'); }
+#section2 { background-image:url('../img/bg_m2.jpg');}
+#section3 { background-image:url('../img/bg_m3.jpg');}
+#section4 { background-image:url('../img/bg_m4.jpg');}
+#section5 { background-image:url('../img/bg_m5.jpg');}
+#section6 { background-image:url('../img/bg_m6.jpg');}
+
+.txtBox { position:absolute; left:20%; top:33.3%; color:#fff; }
+
+.txtBox h3 { font-size:3.5em; font-family:'Montserrat', sans-serif; letter-spacing:-1px; margin-bottom:30px; }
+.txtBox p.txt { font-size:1.15em; line-height:1.6; }
+.txtBox .btnDown { width:36px; height:24px; background:url('../img/sp_common_v3.png') 0 -91px; margin-top:30px; cursor: pointer; }
+.txtBox .toast { font-size:1.15em; text-decoration:underline; margin-top:30px; cursor: pointer;}
+
+/* 리모트 버튼 */
+#remote { position:fixed; top:50%; left:50px; transform:translateY(-50%); }
+#remote a { display:block; width:6px; height:6px; border:3px solid #fff;margin-bottom: 10px; text-indent: -9999px;}
+
+#remote a.on { border:3px solid #FA2828; background:#FA2828;} 
+
+/*
+.s_num { position:fixed; top:100px; left:50px; font-size:40px; border:3px solid yellow; color:yellow; }
+*/
+
+/*푸터*/
+footer{clear: both;}
+
+.footer_up { display:flex;  color:#fff; height:130px; }
+.footer_up > div { flex:1; display:table; }
+.footer_up > div > div { display:table-cell; vertical-align:middle;  }
+
+    .stock { background:#FA2828;  }
+    .stock div div { width:540px; border:2px solid Black;}
+    .stock div h3 { float: left;margin-left: 70px;}
+    .stock dl { }
+    .stock dl dd { float:left; font-size:14px; margin-left:20px;}
+    .stock dl .money { font-size:24px; font-weight:bold;}
+
+    .press{background:#232323;}
+    .press div {padding-left: 30px;}
+    .press div a{font-size: 14px; color: #fff;}
+
+.footer_do{ margin-bottom: 150px;}
+    .notice{ border-bottom: 1px solid #ddd; margin: 20px 0 20px;
+    padding-bottom: 20px;}   
+    .notice strong{color: #222;margin-left: 70px;}   
+    .notice a{color: #222; text-decoration: none;margin-left: 70px;}   
+
+    .flist{position: relative; font-size: 14px;margin-left: 70px;
+    padding-top: 20px;}   
+    .flist li{float: left;;margin-left: 70px;font-size: 14px;} 
+    .flist li:nth-child(1){margin-left: 0;}  
+    .flist li:nth-child(3){ color: #000; margin-bottom: 20px; 
+        font-weight: bold; }   
+    .flist li a{ color: #999;font-size: 14px;} 
+
+    .glo{position:absolute; left:70%;;}
+    .glo ul{}
+    .glo ul li {float: left;}
+    .glo ul li a{display: inline-block; color: #888;
+        margin: 0 60px 0 10px ; font-size: 14px; line-height: 25px;}
+    
+    .last {margin:50px 0 50px;left:70px;
+        position:absolute;display:inline-block;font-size: 14px; }
+    .last p { color: #999;font-size: 14px;}
